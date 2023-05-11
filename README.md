@@ -17,3 +17,17 @@ prettier
 快捷键
 mac:
 shift+option+F
+
+
+husky:
+安装包
+husky,lint-staged
+"@commitlint/cli",
+"@commitlint/config-conventional",
+
+在"scripts"中添加
+"prepare": "husky install"
+执行pnpm run prepare
+
+执行npx husky add .husky/pre-commit "npm run lint"
+
