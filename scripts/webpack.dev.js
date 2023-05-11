@@ -11,7 +11,7 @@ module.exports = merge(common, {
     hot: true, // 热更新
     port: 3000,
     open: false,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   module: {
     rules: [
