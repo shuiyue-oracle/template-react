@@ -31,3 +31,7 @@ husky,lint-staged
 
 执行npx husky add .husky/pre-commit "npm run lint"
 
+
+## TODO
+eslint未生效
+husky存在问题

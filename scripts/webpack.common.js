@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const WebpackBar = require("webpackbar");
-const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, "../src/index.jsx"),
@@ -48,12 +47,7 @@ module.exports = {
       // 定义在代码中可以替换的一些常量 
       __DEV__: process.env.NODE_ENV === "development",
     }),
-    new WebpackBar(),
-    new ESLintPlugin({
-      extensions: ['js', 'jsx'],
-      exclude: '/node_modules/',
-      fix: true,
-    }),
+    new WebpackBar()
   ],
   stats: "errors-only",
   infrastructureLogging: {
