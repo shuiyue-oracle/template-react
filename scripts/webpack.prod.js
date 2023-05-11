@@ -38,6 +38,19 @@ module.exports = merge(common, {
         notes: ['']
       },
       clearConsole: true,
+      // 编译出错
+      onErrors: (severity, errors) => {
+        if (severity !== "error") {
+          return;
+        }
+        const error = errors[0];
+        // 编译出错时,系统右下角弹出错误提示
+        notifier.notify({
+          title: "Webpack error",
+          message: severity + ": " + error.name,
+          subtitle: error.file || "",
+        });
+      },
     })
   ],
   optimization: {
