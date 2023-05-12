@@ -7,14 +7,16 @@
     "start": "webpack server --config scripts/webpack.dev.js",
     "build": "webpack --config scripts/webpack.prod.js",
     "lint": "eslint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "node": "node ./src/utils/test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",

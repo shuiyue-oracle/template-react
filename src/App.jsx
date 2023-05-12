@@ -1,11 +1,9 @@
-import React from 'react';
+import { useRoutes } from 'react-router-dom';
+import { ROUTER_CONFIG } from '@/router'
 
 const App = () => {
-  let a = 0;
-  const get = (url) => {
-    return url;
-  };
-  return <>APP</>;
+  const appRoutesElement = useRoutes(ROUTER_CONFIG);
+  return appRoutesElement;
 };
 
 export default App;
