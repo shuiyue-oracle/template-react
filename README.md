@@ -29,12 +29,14 @@ husky,lint-staged
 "prepare": "husky install"
 执行pnpm run prepare
 
+创建pre-commit
 执行npx husky add .husky/pre-commit "npm run lint"
 
+创建commit-msg
+npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"
 
 ## TODO
-eslint未生效
-husky存在问题
+
 
 # eslint
 参考文档
