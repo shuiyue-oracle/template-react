@@ -22,6 +22,7 @@ shift+option+F
 husky:
 安装包
 husky,lint-staged
+commit:
 "@commitlint/cli",
 "@commitlint/config-conventional",
 
@@ -41,3 +42,9 @@ npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"
 # eslint
 参考文档
 https://zh-hans.eslint.org/docs/latest/use/getting-started
+
+支持ts
+安装包
+eslint-plugin-react@latest
+@typescript-eslint/eslint-plugin@latest
+@typescript-eslint/parser@latest
