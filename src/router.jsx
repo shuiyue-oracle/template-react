@@ -3,11 +3,11 @@ import Home from '@/pages/home';
 
 const ROUTER_CONFIG = [
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "*",
+    path: '*',
     element: <>404 Not Found!</>,
   },
 ];

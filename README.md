@@ -35,3 +35,7 @@ husky,lint-staged
 ## TODO
 eslint未生效
 husky存在问题
+
+# eslint
+参考文档
+https://zh-hans.eslint.org/docs/latest/use/getting-started
