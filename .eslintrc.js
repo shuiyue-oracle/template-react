@@ -35,6 +35,15 @@ module.exports = {
     // 强制使用 === 和 !==
     eqeqeq: ['error', 'always'],
     // 禁止使用eval
-    'no-eval': 'error'
+    'no-eval': 'error',
+    // 循环复杂度，默认20
+    complexity: 'warn',
+    // 文件最大行数
+    'max-lines': ['warn', {
+      max: 400,
+      skipBlankLines: true, // 忽略空白行
+      skipComments: true // 忽略注释行
+    }],
+    'no-empty-function': 'error'
   }
 }
