@@ -9,7 +9,7 @@ interface LazyWrapperProps {
  * 懒加载组件包装器
  */
 const LazyWrapper: FC<LazyWrapperProps> = ({ path }) => {
-  const LazyComponent = lazy(() => import(`/src/pages${path}`));
+  const LazyComponent = lazy(() => import(`@/pages${path}`));
   return (
     <Suspense fallback={<div>loading...</div>}>
       <LazyComponent />
