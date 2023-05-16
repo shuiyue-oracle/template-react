@@ -1,10 +1,14 @@
 import React from 'react';
-import Home from '@/pages/home';
+import LazyWrapper from '@/components/lazy-wrapper';
 
 const ROUTER_CONFIG = [
   {
     path: '/',
-    element: <Home />,
+    element: <LazyWrapper path="/home" />,
+  },
+  {
+    path: '/about',
+    element: <LazyWrapper path="/about" />,
   },
   {
     path: '*',

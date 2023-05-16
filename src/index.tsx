@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import '@/assets/styles/base.scss';
 
-const container = document.getElementById('root');
+const container = document.getElementById('root') as Element | DocumentFragment;
 
 const root = createRoot(container);
 

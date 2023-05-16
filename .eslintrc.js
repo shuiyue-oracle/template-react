@@ -25,6 +25,8 @@ module.exports = {
     'no-console': 'error',
     // 禁止使用debugger
     'no-debugger': 'error',
+    'no-undef': 'off',
+    '@typescript-eslint/no-var-requires': 'off', // 允许es6模块使用requires
     // 强制使用单引号
     quotes: ['error', 'single'],
     // 强制使用分号
